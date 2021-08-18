@@ -15,7 +15,7 @@
 const animation = anime({
     targets: '.box',
     translateY: [
-        {value: 500, duration: 1500 },
+        {value: 500, duration: 2500},
         {value: 0, duration: 1000}
     ],
     rotate: [
@@ -23,7 +23,8 @@ const animation = anime({
         {value: '2turn', easing: 'easeInOutSine'},
     ],
     autoplay: 0,
-    // loop: true,
+    loop: true,
+    borderRadius: ['0%', '60%'],
     delay: function(el, i, l) {
         return i * 100;
       },
